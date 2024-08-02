@@ -37,6 +37,9 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+.terraform.lock.hcl
+
+
 
 #script commands
 
