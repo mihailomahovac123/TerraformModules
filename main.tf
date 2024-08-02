@@ -6,11 +6,11 @@ terraform {
     }
   }
 
-    #preinstalled
+    
     backend "s3" {
         bucket="tfstatemihailo"
-        key="terraform5.state"
-        region = "eu-central-1"
+        key="terraform5.state" 
+        region = "eu-central-1" 
       
     }
 
