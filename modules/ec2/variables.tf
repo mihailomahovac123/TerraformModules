@@ -35,11 +35,11 @@ variable "depends_on_two" {
 
 variable "instance_profile_name" {
   type = any
-  default = []
+  default = ["Name of instance profile."]
 }
 
 
 variable "sg_id" {
   type = any
-  default = []
+  default = ["ID of security group."]
 }

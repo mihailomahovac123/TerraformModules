@@ -6,7 +6,7 @@ variable "policy_name" {
 
 variable "role_id" {  //!
   type = any
-  default = []
+  default = ["ID of a cloud watch role created."]
 }
 
 variable "policy_depends_on" {
