@@ -1,10 +1,10 @@
 variable "policy_name" {
   description = "Policy name for policy"
   type = string
-  default = ""
+  default = "cw_full_access_policy"
 }
 
-variable "role_id" {
+variable "role_id" {  //!
   type = any
   default = []
 }

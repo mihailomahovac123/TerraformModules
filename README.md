@@ -28,13 +28,12 @@ No inputs.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_instance_ip_address"></a> [instance\_ip\_address](#output\_instance\_ip\_address) | n/a |
 ## Requirements
 
 No requirements.
-
-## CloudWatch Access Policy Module
-
 
 ## Providers
 
@@ -57,7 +56,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_policy_depends_on"></a> [policy\_depends\_on](#input\_policy\_depends\_on) | n/a | `any` | `[]` | no |
-| <a name="input_policy_name"></a> [policy\_name](#input\_policy\_name) | Policy name for policy | `string` | `""` | no |
+| <a name="input_policy_name"></a> [policy\_name](#input\_policy\_name) | Policy name for policy | `string` | `"cw_full_access_policy"` | no |
 | <a name="input_role_id"></a> [role\_id](#input\_role\_id) | n/a | `any` | `[]` | no |
 
 ## Outputs
@@ -68,11 +67,6 @@ No modules.
 ## Requirements
 
 No requirements.
-
-
-## CloudWatch Access Role Module
-
-
 
 ## Providers
 
@@ -94,8 +88,8 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_resource_name"></a> [resource\_name](#input\_resource\_name) | Name of the resource that the role will be attached to | `string` | `""` | no |
-| <a name="input_role_name"></a> [role\_name](#input\_role\_name) | Name of the role | `string` | `""` | no |
+| <a name="input_resource_name"></a> [resource\_name](#input\_resource\_name) | Name of the resource that the role will be attached to | `string` | `"ec2"` | no |
+| <a name="input_role_name"></a> [role\_name](#input\_role\_name) | Name of the role | `string` | `"CloudWatchAccessForEC2Instance"` | no |
 
 ## Outputs
 
@@ -106,11 +100,6 @@ No modules.
 ## Requirements
 
 No requirements.
-
-
-## Instance Profile Module
-
-
 
 ## Providers
 
@@ -132,7 +121,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_instance_profile_name"></a> [instance\_profile\_name](#input\_instance\_profile\_name) | Instance profile name. | `string` | `""` | no |
+| <a name="input_instance_profile_name"></a> [instance\_profile\_name](#input\_instance\_profile\_name) | Instance profile name. | `string` | `"cloud_watch_instance_profile"` | no |
 | <a name="input_instnace_profile_depends_on"></a> [instnace\_profile\_depends\_on](#input\_instnace\_profile\_depends\_on) | n/a | `any` | `[]` | no |
 | <a name="input_role_name"></a> [role\_name](#input\_role\_name) | n/a | `any` | `[]` | no |
 
@@ -144,11 +133,6 @@ No modules.
 ## Requirements
 
 No requirements.
-
-
-## Module for EC2 Security group
-
-
 
 ## Providers
 
@@ -170,8 +154,8 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_cidr"></a> [cidr](#input\_cidr) | CIDR block. | `string` | `""` | no |
-| <a name="input_sg_name"></a> [sg\_name](#input\_sg\_name) | SG name | `string` | `""` | no |
+| <a name="input_cidr"></a> [cidr](#input\_cidr) | CIDR block. | `string` | `"0.0.0.0/0"` | no |
+| <a name="input_sg_name"></a> [sg\_name](#input\_sg\_name) | SG name | `string` | `"ec2_cw_agent_sg"` | no |
 | <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | VPC id. | `string` | `"vpc-0769af89e3dff6849"` | no |
 
 ## Outputs
@@ -182,10 +166,6 @@ No modules.
 ## Requirements
 
 No requirements.
-
-
-## CloudWatch EC2 Module
-
 
 ## Providers
 
@@ -218,4 +198,6 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_public_ip_address"></a> [public\_ip\_address](#output\_public\_ip\_address) | n/a |

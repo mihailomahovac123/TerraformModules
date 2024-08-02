@@ -11,7 +11,7 @@ terraform {
     #preinstalled
     backend "s3" {
         bucket="tfstatemihailo"
-        key="terraform3.state"
+        key="terraform5.state"
         region = "eu-central-1"
       
     }
@@ -30,13 +30,13 @@ module "cwrole" {
 module "cwpolicy" {
     source = "./modules/cloudwatch_access_policy"
     depends_on = [ module.cwrole ]
-    role_id = module.cwrole.role_id #role_id iz modula policy je onaj role_id iz modula role 
+    role_id = module.cwrole.role_id #role_id iz modula policy je onaj role_id iz modula role; ovde ga inicijalizujemo
 }
 
 module "inst_profile" {
     source = "./modules/instance_profile"
     depends_on =  [module.cwrole.role_name]
-    role_name = module.cwrole.role_name
+    role_name = module.cwrole.role_name #ovde inicijalizujemo role_name
 }
 
 module "sg_for_ec2" {

@@ -1,7 +1,7 @@
 variable "sg_name" {
   description = "SG name"
   type = string
-  default = ""
+  default = "ec2_cw_agent_sg"
 }
 
 variable "vpc_id" {
@@ -13,6 +13,6 @@ variable "vpc_id" {
 variable "cidr" {
   description = "CIDR block."
   type = string
-  default = ""
+  default = "0.0.0.0/0"
 }
 

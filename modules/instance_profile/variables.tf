@@ -9,8 +9,8 @@ variable "instnace_profile_depends_on" { #zavisi od modula role
   default = []
 }
 
-variable "instance_profile_name" {
+variable "instance_profile_name" { 
   description = "Instance profile name." 
   type = string
-  default = ""
+  default = "cloud_watch_instance_profile"
 }
