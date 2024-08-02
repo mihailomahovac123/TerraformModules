@@ -24,11 +24,7 @@ No resources.
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_provisioning_region"></a> [provisioning\_region](#input\_provisioning\_region) | Region for resource provisioning. | `string` | `"eu-central-1"` | no |
-| <a name="input_terraform_remote_state_file"></a> [terraform\_remote\_state\_file](#input\_terraform\_remote\_state\_file) | Terraform tfstate file on remote backend. | `string` | `"terraform5.state"` | no |
-| <a name="input_terraform_state_file_bucket"></a> [terraform\_state\_file\_bucket](#input\_terraform\_state\_file\_bucket) | Bucket for remote backend. | `string` | `"tfstatemihailo"` | no |
+No inputs.
 
 ## Outputs
 

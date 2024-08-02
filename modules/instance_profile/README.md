@@ -24,8 +24,8 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_instance_profile_name"></a> [instance\_profile\_name](#input\_instance\_profile\_name) | Instance profile name. | `string` | `"cloud_watch_instance_profile"` | no |
 | <a name="input_instnace_profile_depends_on"></a> [instnace\_profile\_depends\_on](#input\_instnace\_profile\_depends\_on) | n/a | `any` | `[]` | no |
-| <a name="input_role_name"></a> [role\_name](#input\_role\_name) | n/a | `any` | `[]` | no |
-| <a name="input_tag"></a> [tag](#input\_tag) | n/a | `string` | `""` | no |
+| <a name="input_role_name"></a> [role\_name](#input\_role\_name) | Name of the role. | `any` | `[]` | no |
+| <a name="input_tag"></a> [tag](#input\_tag) | Common tag for all resources. | `string` | `""` | no |
 
 ## Outputs
 

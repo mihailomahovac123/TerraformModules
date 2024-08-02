@@ -24,7 +24,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_cidr"></a> [cidr](#input\_cidr) | CIDR block. | `string` | `"0.0.0.0/0"` | no |
 | <a name="input_sg_name"></a> [sg\_name](#input\_sg\_name) | SG name | `string` | `"ec2_cw_agent_sg"` | no |
-| <a name="input_tag"></a> [tag](#input\_tag) | n/a | `string` | `""` | no |
+| <a name="input_tag"></a> [tag](#input\_tag) | Common tag for all resources. | `string` | `""` | no |
 | <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | VPC id. | `string` | `"vpc-0769af89e3dff6849"` | no |
 
 ## Outputs

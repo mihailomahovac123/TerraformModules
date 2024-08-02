@@ -22,9 +22,9 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_policy_depends_on"></a> [policy\_depends\_on](#input\_policy\_depends\_on) | n/a | `any` | `[]` | no |
+| <a name="input_policy_depends_on"></a> [policy\_depends\_on](#input\_policy\_depends\_on) | Additional variable for including extrnal module. | `any` | `[]` | no |
 | <a name="input_policy_name"></a> [policy\_name](#input\_policy\_name) | Policy name for policy | `string` | `"cw_full_access_policy"` | no |
-| <a name="input_role_id"></a> [role\_id](#input\_role\_id) | n/a | `any` | <pre>[<br>  "ID of a cloud watch role created."<br>]</pre> | no |
+| <a name="input_role_id"></a> [role\_id](#input\_role\_id) | ID of a dependant role. | `any` | <pre>[<br>  "ID of a cloud watch role created."<br>]</pre> | no |
 
 ## Outputs
 

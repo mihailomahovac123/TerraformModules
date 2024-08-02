@@ -24,16 +24,19 @@ variable "key_name" {
 }
 
 variable "depends_on_one" {  
+  description = "Additional variable for including extrnal module."
   type = any
   default = []
 }
-variable "depends_on_two" {  
+variable "depends_on_two" {
+  description = "Additional variable for including extrnal module."  
   type = any
   default = []
 }
 
 
 variable "instance_profile_name" {
+  description = "Name of instance profile."
   type = any
   default = ["Name of instance profile."]
 }

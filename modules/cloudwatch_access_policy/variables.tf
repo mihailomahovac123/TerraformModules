@@ -5,11 +5,13 @@ variable "policy_name" {
 }
 
 variable "role_id" {  //!
+description = "ID of a dependant role."
   type = any
   default = ["ID of a cloud watch role created."]
 }
 
 variable "policy_depends_on" {
+  description = "Additional variable for including extrnal module."
   type = any
   default = []
 }

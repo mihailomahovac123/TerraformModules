@@ -23,9 +23,9 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_ami"></a> [ami](#input\_ami) | AMI. | `string` | `"ami-0dd35f81b9eeeddb1"` | no |
-| <a name="input_depends_on_one"></a> [depends\_on\_one](#input\_depends\_on\_one) | n/a | `any` | `[]` | no |
-| <a name="input_depends_on_two"></a> [depends\_on\_two](#input\_depends\_on\_two) | n/a | `any` | `[]` | no |
-| <a name="input_instance_profile_name"></a> [instance\_profile\_name](#input\_instance\_profile\_name) | n/a | `any` | <pre>[<br>  "Name of instance profile."<br>]</pre> | no |
+| <a name="input_depends_on_one"></a> [depends\_on\_one](#input\_depends\_on\_one) | Additional variable for including extrnal module. | `any` | `[]` | no |
+| <a name="input_depends_on_two"></a> [depends\_on\_two](#input\_depends\_on\_two) | Additional variable for including extrnal module. | `any` | `[]` | no |
+| <a name="input_instance_profile_name"></a> [instance\_profile\_name](#input\_instance\_profile\_name) | Name of instance profile. | `any` | <pre>[<br>  "Name of instance profile."<br>]</pre> | no |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | Instance type. | `string` | `"t2.micro"` | no |
 | <a name="input_key_name"></a> [key\_name](#input\_key\_name) | Key name. | `string` | `"first_key"` | no |
 | <a name="input_sg_id"></a> [sg\_id](#input\_sg\_id) | n/a | `any` | <pre>[<br>  "ID of security group."<br>]</pre> | no |

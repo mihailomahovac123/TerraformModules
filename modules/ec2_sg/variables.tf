@@ -17,6 +17,7 @@ variable "cidr" {
 }
 
 variable "tag" {
+    description = "Common tag for all resources."
   type = string
   default = ""
   

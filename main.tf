@@ -28,7 +28,7 @@ locals {
   cwpolicy_name = "${local.prefix}-cwpolicy"
   instance_profile_name = "${local.prefix}-instance-profile"
   security_group_name = "${local.prefix}-security-group"
-  //ec2_instance_name = "${local.prefix}-ec2"
+  
   
 
   projectTag = "my_app_mihailo"
