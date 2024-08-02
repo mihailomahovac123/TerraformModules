@@ -16,3 +16,9 @@ variable "cidr" {
   default = "0.0.0.0/0"
 }
 
+variable "tag" {
+  type = string
+  default = ""
+  
+}
+

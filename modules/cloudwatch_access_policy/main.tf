@@ -39,4 +39,9 @@ resource "aws_iam_role_policy" "cloud_watch_full_access_policy" {
         }
     ]
 })
+
+
+
+
+
 }

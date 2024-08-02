@@ -13,4 +13,12 @@ resource "aws_instance" "ec2_with_cw_agent" {
               sudo yum update -y 
               sudo yum install -y awslogs
               EOF
+
+
+tags = {
+    Name=var.tag
+}
+
+
+
 }

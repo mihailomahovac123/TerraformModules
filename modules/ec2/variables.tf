@@ -43,3 +43,9 @@ variable "sg_id" {
   type = any
   default = ["ID of security group."]
 }
+
+variable "tag" {
+  type = string
+  default = ""
+  
+}

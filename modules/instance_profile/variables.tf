@@ -14,3 +14,9 @@ variable "instance_profile_name" {
   type = string
   default = "cloud_watch_instance_profile"
 }
+
+variable "tag" {
+  type = string
+  default = ""
+  
+}
