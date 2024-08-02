@@ -36,3 +36,14 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+
+#script commands
+
+#terraform-docs markdown table . > README.md 
+
+#terraform-docs markdown table modules/cloudwatch_access_policy >> README.md
+#terraform-docs markdown table modules/cloudwatch_access_role  >> README.md
+#terraform-docs markdown table modules/instance_profile >> README.md  
+#terraform-docs markdown table modules/ec2_sg >> README.md
+#terraform-docs markdown table modules/ec2 >> README.md
